@@ -1,0 +1,664 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+   
+
+
+}
+span{
+   color: white;
+}
+h2{
+    font-size: 2.2rem;
+    /*letter-spacing: 0.16rem;*/
+    cursor: pointer;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+
+nav{
+  
+    padding-top: 2.8rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    display:flex ;
+    justify-content:space-between ;
+    text-align: center;
+}
+
+/*
+ul{
+    position: fixed;
+  display: inline;
+  padding-left: 370px;
+}*/
+nav ul li {
+   list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+  
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: 1s;
+   
+}
+nav ul li a:hover{
+    color: yellow;
+}
+.btn{
+    background-color: black;
+    color: white;
+   border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 60px;
+    border: 2px solid yellow;
+}
+
+.btn:hover{
+   background-color: black;
+   color: yellow;
+   border: 2px solid yellow;
+}
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    
+    
+    background-image: url(pexels-mounir-salah-14710226-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-attachment: scroll;
+    background-size: 800px;
+
+}
+
+.word{
+    display: block;
+    color: white;
+}
+
+
+.word h1{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 40px;
+}
+
+
+.word h3{
+    
+    font-size: 25px;
+ }
+ 
+
+/**/
+h1 {
+    font-size: 9vmin;
+    color: yellow;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+  }
+  
+  /* Typewriter effect 1 */
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "F"; }
+    2.2791%, 25.0698% { content: "Fa"; }
+    3.4186%, 23.9302% { content: "Fas"; }
+    4.5581%, 22.7907% { content: "Fast"; }
+    
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "P"; }
+    33.0465%, 49.0000% { content: "Pe"; }
+    34.1860%, 47.8605% { content: "Per"; }
+    35.3256%, 46.7209% { content: "Perf"; }
+    36.4651%, 45.5814% { content: "Perfec"; }
+    37.6047%, 44.4419% { content: "Perfect"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "E"; }
+    56.9767%, 72.9302% { content: "Ex"; }
+    58.1163%, 71.7907% { content: "Exp"; }
+    59.2558%, 70.6512% { content: "Expe"; }
+    60.3953%, 69.5116% { content: "Expert"; }
+    61.5349%, 68.3721% { content: "Experts"; }
+   
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "P"; }
+    80.9070%, 94.5814% { content: "Prof"; }
+    82.0465%, 93.4419% { content: "Profess"; }
+    83.1860%, 92.3023% { content: "Professio"; }
+    84.3256%, 91.1628% { content: "Professional"; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+
+/*
+
+
+
+  .card{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .card1{
+    border-style: solid;
+  
+    display: flex;
+    
+  }
+
+  .image1{
+    border-style: double;
+    border-radius: 50%;
+    
+  }
+
+  /**/
+  :root {
+    --font-family-primary: 'Vollkorn', serif;
+    --font-family-secondary: 'PT Sans', sans-serif;
+    
+    --font-size-title: 32px;
+    --line-height-title: 1.4;
+    --font-size-caption: 14px;
+    --line-height-caption: 1.2;
+    
+    --color-text: #222022;
+    --color-highlight-primary: #FFEF7E;
+    --color-highlight-secondary: #B7F9E9;
+    --border-radius-primary: 32px; 
+  }
+  
+  @mixin mediaBig {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @include mediaBig {
+    :root {
+      --font-size-title: 40px;
+    }  
+  }
+  
+  .card {
+  
+    border-radius: var(--border-radius-primary);
+    box-shadow: 24px 24px 80px rgba(0,0,0,0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  
+    
+    @include mediaBig {
+      flex-direction: row;
+      align-items: center;
+
+      margin: 40px;
+      padding: 32px;
+    }
+  }
+  
+  .card__image {
+    width: 100%;
+    max-height: 300px;
+    border-radius: var(--border-radius-primary);
+    object-fit: cover;
+    margin-bottom: 18px;
+    
+    @include mediaBig {
+      width: 45%;
+      max-height: none;
+      min-height: 400px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .card__content {
+    @include mediaBig {
+      width: 55%;
+      padding-left: 10px;
+    }
+  }
+  
+  .card__date {
+    display: block;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 6px;
+    
+    @include mediaBig {
+      margin-bottom: 8px;
+    }
+  }
+  
+  .card__title {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    color: var(--color-text);
+    box-decoration-break: clone;
+  font-size: 20px;
+    background-size: 100% 42%;
+    background-repeat: no-repeat;
+    background-position: 0 85%;
+    padding: 0 4px;
+    margin-left: -4px;
+  }
+  .cards{
+display: flex;
+justify-content: space-around;
+  }
+
+  .icon .btn1{
+color: black;
+font-size: 30px;
+
+  }
+.icon {
+    
+    color:black ;
+  
+}
+
+.icon:hover{
+  
+   border: 2px solid yellow;
+ color: black;
+  
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+      
+ color: black;
+   border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: 2px solid black;
+    width: 250px;
+   margin-left: 30%;
+
+}
+
+.menu h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    margin-left: 600px;
+}
+
+.nmenu li a{
+    color: black;
+    margin-left: 130px;
+   display: flex;
+   font-size: 25px;
+}
+
+/**/
+
+/* 
+* Design by Robert Mayer:https://goo.gl/CJ7yC8
+*
+*I intentionally left out the line that was supposed to be below the subheader simply because I don't like how it looks.
+*
+* Chronicle Display Roman font was substituted for similar fonts from Google Fonts.
+*/
+
+  .ncardss{
+    
+  
+    width: 400px;
+    margin-left: 10px;
+
+    border: 3px solid black;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+
+  }
+  
+
+  .bor{
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  .ncardss h3{
+   font-size: 25px; 
+   color:black;
+   text-align: center;
+   margin-right: 5px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  }
+
+  
+  .ncardss h2{
+  font-size: 13px;
+  color:black;
+  text-align: center;
+  display: flex;
+ 
+  }
+  .sale{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  
+  .sale h4{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .hash{
+    display: flex;
+  }
+
+  .about1{
+    display: flex;
+    
+    background-color: black;
+    color: white;
+
+  }
+
+  .img{
+    margin-left: 30px;
+  }
+  .about1 h1{
+   font-size: 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   justify-content: right;
+   color: white;
+    margin-left: 450px;
+  }
+
+  
+  .about1 h2{
+    font-size: 20px;
+    color: white;
+    justify-content: right;
+    margin-left: 300px;
+   }
+
+   
+  .about1 h3{
+    margin-left: 300px;
+    border: 3px solid white;
+    width: 150px;
+     border-radius: 30px;
+     padding: 10px 10px;
+     background-color:white;
+     color: black;
+   }
+
+
+   @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.talk h1{
+   text-align: center;
+}
+
+
+.person{
+    display: flex;
+    justify-content: space-between;
+}
+.person h2{
+   
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 20px 20px;
+    width: 650px;
+    margin-left: 30px;
+}
+
+
+.person h3{
+  
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px 10px;
+    width: 650px;
+    margin-right: 30px;
+}
+
+#tit{
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: black;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.first{
+  margin-right: 100px;
+}
+.first h3{
+color: white;
+font-size: 20px;
+
+}
+
+.secund{
+  margin-right: 200px;
+}
+.secund h1{
+  color: white;
+  font-size: 20px;
+  margin-right: 130px;
+  }
+
+  .ssec [type="text"]{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 180%;
+    background:black;
+    border-radius:5px;
+    border:2px solid darkgray;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+   padding: 15px;
+    border-radius: 2px;
+
+  }
+
+  .ssec{
+    display: flex;
+
+  }
+
+  
+  .ssec [type="submit"]{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 80%;
+    background:gold;
+    border-radius:5px;
+    border:2px solid darkgray;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+   padding: 15px;
+    border-radius: 2px;
+    margin-left: 15px;
+
+  }
+
+  /*
+    Auther: Abdelrhman Said
+*/
+/*
+    Auther: Abdelrhman Said
+*/
+.third h1{
+  font-size: 30px;
+  color: white;
+}
+
+.third h2{
+  font-size: 20px;
+  color: white;
+}
+
+.final{
+display: flex;
+  background-color: black;
+  justify-content: space-between;
+  border: 1px solid;
+  border-top-color:white;
+  
+ 
+}
+
+.final h2{
+  font-size: 15px;
+  color: white;
+  border-top-color: white 1px;
+  margin-left: 20px;
+
+}
+
+
+.final h2{
+  font-size: 15px;
+  color: white;
+  margin-top: 18px;
+  margin-right: 5px;
+}
